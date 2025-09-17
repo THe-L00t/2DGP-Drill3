@@ -9,7 +9,7 @@ rTogle = True
 line = 1
 cx,cy = 10, 70
 time = 0.0
-
+PI = 3.141592
 while (True):
     clear_canvas()
 
@@ -32,9 +32,13 @@ while (True):
                 line = 1
                 rTogle = False
     else:
-        cx = 400 + 250 * math.cos(time)
-        cy = 300 + 250 * math.sin(time)
-        time += 0.09
+        cx = 400 + 250 * math.cos(time*PI)
+        cy = 300 + 250 * math.sin(time*PI)
+        time += 0.02
+        if(time >2):
+            time = 0
+            rTogle = True
+            cx,cy = 10,70
 
     delay(0.016)
     gr.draw_now(400, 10)
