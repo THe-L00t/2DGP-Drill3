@@ -5,7 +5,7 @@ open_canvas()
 ch = load_image('character.png')
 gr = load_image('grass.png')
 
-rTogle = True
+rTogle = 1
 line = 1
 cx,cy = 10, 70
 time = 0.0
