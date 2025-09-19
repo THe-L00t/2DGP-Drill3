@@ -52,8 +52,8 @@ while (True):
                 rTogle = 3
 
     elif rTogle == 3:
-        cx = 400 + 250 * math.cos(time*PI)
-        cy = 300 + 250 * math.sin(time*PI)
+        cx = 400 + 250 * math.cos(-time*PI)
+        cy = 300 + 250 * math.sin(-time*PI)
         time += 0.02
         if(time >2):
             time = 0
