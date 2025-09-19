@@ -72,3 +72,4 @@ while True:
     delay(0.016)
 
 close_canvas()
+ 
